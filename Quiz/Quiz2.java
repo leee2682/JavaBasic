@@ -434,9 +434,10 @@ public class Quiz2 {
             System.out.print("정수(0으로 종료) :");
             b = sc.nextInt();
             sum = b + sum;
-            if (b == 0) break;
+            if (b == 0) break; // b가 0이면 바로 종료
             a++;
-        } while(n > a);  // 입력한 개수와 입력받은 수의 개수가 동일해지면 종료
+        } 
+        while(n > a);  // 입력한 개수와 입력받은 수의 개수가 동일해지면 종료
         System.out.println("합계는 " + sum + "입니다.");
         System.out.println("평균은 " + (sum / a) + "입니다.");
     }
